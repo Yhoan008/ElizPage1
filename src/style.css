@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #faf6ee;
+  --color-beige: #f3ecdf;
+  --color-sand: #e9dfcd;
+  --color-sage: #9db4a0;
+  --color-sagedeep: #5f7a63;
+  --color-pine: #3f5a4c;
+  --color-clay: #d9a98c;
+  --color-claysoft: #e8c4ae;
+  --color-coffee: #3b2f28;
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+body { background: #faf6ee; color: #3b2f28; font-family: var(--font-body); }
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.spiral-slow { animation: spin-slow 60s linear infinite; transform-origin: center; }
